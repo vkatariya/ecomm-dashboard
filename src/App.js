@@ -7,6 +7,7 @@ import Register from "./Register";
 import Add from "./component/product/Add";
 import Edit from "./component/product/Edit";
 import List from "./component/product/List";
+import Restaurant from "./component/restro/Restaurant";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Route path="/product-add" element={<Add />} />
         <Route path="/product-edit" element={<Edit />} />
         <Route path="/product-list" element={<List />} />
+        <Route path="/restaurant" element={<Restaurant />} />
       </Routes>
     </div>
   );
