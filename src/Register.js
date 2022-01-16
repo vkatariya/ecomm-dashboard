@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const history = useNavigate();
+  //const history = useNavigate();
+
+  // useEffect(() => {
+  //   if (localStorage.getItem("user-info")) {
+  //     history.push("/login");
+  //   }
+  // }, []);
+
   async function SignUp() {
     let item = { name, email, password };
     console.warn(item);
@@ -19,7 +27,7 @@ function Register() {
     result = await result.json();
     console.warn("result", result);
     localStorage.setItem("user-info", JSON.stringify(result));
-    history.push("/register");
+    history.push("/login");
   }
   return (
     <div className="col-sm-6 offset-sm-3">
@@ -49,7 +57,7 @@ function Register() {
       />
       <br></br>
       <button onClick={SignUp} className="btn  btn-primary">
-        save
+        Register
       </button>
     </div>
   );

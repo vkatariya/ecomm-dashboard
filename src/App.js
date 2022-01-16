@@ -8,6 +8,7 @@ import Add from "./component/product/Add";
 import Edit from "./component/product/Edit";
 import List from "./component/product/List";
 import Restaurant from "./component/restro/Restaurant";
+import FavoriteColor from "./component/FavoriteColor";
 function App() {
   return (
     <div className="App">
@@ -15,11 +16,13 @@ function App() {
       {/* <h1>Welcome to React E-Comm</h1> */}
       <Routes>
         <Route path="/login" element={<Login />} />
+
         <Route path="/register" element={<Register />} />
         <Route path="/product-add" element={<Add />} />
         <Route path="/product-edit" element={<Edit />} />
         <Route path="/product-list" element={<List />} />
         <Route path="/restaurant" element={<Restaurant />} />
+        <Route path="/color" element={<FavoriteColor />} />
       </Routes>
     </div>
   );

@@ -26,6 +26,7 @@ function Header() {
           <Link to="/login">Login</Link>
           <Link to="/register">Register</Link>
           <Link to="/restaurant">Restaurant</Link>
+          <Link to="/color">Favoriate</Link>
         </Nav>
         <Nav>
           <NavDropdown title={user && user.name}>
