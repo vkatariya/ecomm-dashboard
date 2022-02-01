@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import BootstrapTable from "react-bootstrap-table-next";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.css";
 import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
-import { Table } from "react-bootstrap";
+// import { Table } from "react-bootstrap";
 import paginationFactory from "react-bootstrap-table2-paginator";
 
 function List() {
@@ -59,11 +59,11 @@ function List() {
         defaultSorted={defaultSorted}
         pagination={pagination}
       />
-      <Table striped bordered hover variant="">
+      {/* <Table striped bordered hover variant="">
         <thead>
           <tr>
             <th scope="col">#</th>
-            {/* <th scope="col">Image</th> */}
+            <th scope="col">Image</th>
             <th scope="col">Title</th>
             <th scope="col">Price</th>
             <th scope="col">description</th>
@@ -73,16 +73,16 @@ function List() {
           {data.map((item) => (
             <tr>
               <th scope="row">{item.id}</th>
-              {/* <td>
+              <td>
                 <img src={item.file_path}></img>
-              </td> */}
+              </td>
               <td>{item.title}</td>
               <td>{item.price}</td>
               <td>{item.description}</td>
             </tr>
           ))}
         </tbody>
-      </Table>
+      </Table> */}
     </div>
   );
 }

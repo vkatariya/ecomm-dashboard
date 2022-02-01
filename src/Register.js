@@ -5,7 +5,7 @@ function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //const history = useNavigate();
+  const history = useNavigate();
 
   // useEffect(() => {
   //   if (localStorage.getItem("user-info")) {

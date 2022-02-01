@@ -7,16 +7,32 @@ function FavoriteColor() {
   return (
     <>
       <h1>My favorite color is {color}!</h1>
-      <button type="button" onClick={() => setColor("blue")}>
+      <button
+        className="btn btn-primary"
+        type="button"
+        onClick={() => setColor("blue")}
+      >
         Blue
       </button>
-      <button type="button" onClick={() => setColor("red")}>
+      <button
+        className="btn btn-danger"
+        type="button"
+        onClick={() => setColor("red")}
+      >
         Red
       </button>
-      <button type="button" onClick={() => setColor("pink")}>
+      <button
+        className="btn btn-warning"
+        type="button"
+        onClick={() => setColor("yellow")}
+      >
         Pink
       </button>
-      <button type="button" onClick={() => setColor("green")}>
+      <button
+        className="btn btn-success"
+        type="button"
+        onClick={() => setColor("green")}
+      >
         Green
       </button>
     </>
